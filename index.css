@@ -1,0 +1,222 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  /* background-color: #FFF3E0; */
+  background-color: #faedca;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.header {
+  background-color: #fe5d26;
+  padding: 8px 0px 16px 32px;
+  display: flex;
+  align-items:flex-end;
+
+}
+
+.header img {
+    max-width: 64px;
+    height: auto;
+}
+
+.header .title {
+  font-weight: 900;
+  font-size: 42px;
+  padding-left: 20px;
+  /* color: white; */
+}
+
+.section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.section .hero {
+  flex: 1;
+  margin: 28px;
+  background-image: url("../assets/hero.jpg");
+  background-position: center;
+  /* height: 60vh; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 450px;
+  border-radius: 18px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.section .hero .hero-text {
+  border-radius: 18px;
+  background-color: rgba(0, 0, 0, 0.4); /* semi-transparent black */
+  align-content: center;
+  color: white;
+  width: 100%;
+}
+
+.section .hero .hero-text #title {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.section .hero .hero-text #description {
+    font-size: 32px;
+    font-weight: 500;
+    padding: 0px 100px;
+}
+
+.section .recipes {
+  margin-top: 28px;
+  padding: 32px;
+  background-color: #c1dbb3;
+}
+
+.section .recipes .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+}
+
+.section .recipes .cards .recipe-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  align-items: center;
+  width: 450px;
+}
+
+.section .recipes .cards .recipe-card img {
+  box-sizing: border-box;
+  padding: 12px;
+  border-radius: 28px;
+  width: 450px;
+  height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .section .recipes .cards .recipe-card {
+    width: 350px;
+  }
+  .section .recipes .cards .recipe-card img {
+    width: 350px;
+    height: auto;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.section .recipes .cards .recipe-card .card-link {
+  text-align: center;
+  color: black;
+}
+
+.section .recipes #recipe-title {
+  color: #fe5d26;
+  font-weight: 900;
+  font-size: 24px;
+  text-shadow: 1px 1px black;
+  padding-bottom: 18px;
+}
+.section .recipes .cards .recipe-card .card-text {
+  font-size: 24px;
+  padding-bottom: 12px;
+}
+
+.recipe-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.recipe-btn button {
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #fe5d26;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  padding: 8px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.recipe-card img {
+  max-width: 450px;
+  max-height: 450px;
+}
+
+@media screen and (max-width:532px) {
+    .section .hero .hero-text #title {
+        font-size: 32px;
+        padding: 0px 8px;
+    }
+    .section .hero .hero-text #description {
+        font-size: 24px;
+        padding: 0px 42px;
+    }
+      .section .recipes #recipe-title {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 430px) {
+    .header .title {
+        font-size: 38px;
+    }
+    .header img {
+        max-width: 52px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:321px) {
+    .section .hero .hero-text #title {
+        font-size: 28px;
+        padding: 0px 8px;
+    }
+    .section .hero .hero-text #description {
+        font-size: 24px;
+        padding: 16px 24px;
+    }
+}
+
+
+
+@media screen and (max-width: 375px) {
+  .section .recipes .cards .recipe-card {
+    width: 250px;
+  }
+  .section .recipes .cards .recipe-card img {
+    width: 250px;
+    height: auto;
+  }
+  .section .recipes .cards .recipe-card .card-text {
+    font-size: 16px;
+    padding-bottom: 12px;
+  }
+  .recipe-btn button {
+    font-size: 16px;
+    width: 100px;
+    height: 40px;
+  }
+  .footer {
+    font-size: 16px;
+  }
+}
