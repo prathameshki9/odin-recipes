@@ -1,0 +1,288 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  /* background-color: #FFF3E0; */
+  background-color: #faedca;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.header {
+  background-color: #fe5d26;
+  padding: 8px 0px 16px 32px;
+}
+
+.header img {
+  max-width: 64px;
+  height: auto;
+}
+
+.header .title {
+  font-weight: 900;
+  font-size: 42px;
+  padding-left: 20px;
+  /* color: white; */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: flex-end;
+}
+
+.section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 42px 0px;
+}
+
+.section-container {
+  box-sizing: border-box;
+  max-width: 850px;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  background-color: #c1dbb3;
+  border-radius: 18px;
+  padding: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 950px) {
+  .section-container {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .section-container {
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .section-container {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .section-container {
+    max-width: 250px;
+  }
+}
+
+.section .section-container .section-header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.section .section-container .section-header h1 {
+  font-weight: 900;
+  font-size: 38px;
+  padding-bottom: 24px;
+}
+.section .section-container .section-header p {
+  font-size: 24px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.section .section-container .section-header #header-image img {
+  border-radius: 4px;
+  max-width: 100%;
+  height: auto;
+}
+
+.section .section-container .making-time {
+  background-color: #fe5d26;
+  color: white;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.section .section-container .making-time div .lable {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.section .section-container .making-time div .value {
+  font-size: 18px;
+  padding-left: 4px;
+}
+
+.section .section-container .ingredients,
+.section .section-container .directions,
+.section .section-container .nutrition {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.section .section-container .ingredients ul,
+.section .section-container .directions ol {
+  padding: 12px 40px;
+}
+
+.section .section-container .nutrition div {
+  padding-top: 12px;
+  padding-right: 64px;
+}
+
+.section .section-container .nutrition div .nutrition-value {
+  font-weight: 700;
+  padding-bottom: 12px;
+}
+
+.section .section-container .nutrition .nutrition-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section .section-container .navigate-home {
+  display: flex;
+  justify-content: center;
+}
+
+.section .section-container .navigate-home button {
+  width: 180px;
+  height: 45px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #fe5d26;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.section .section-container .navigate-home :hover {
+      transform: scale(1.05); /* Slight zoom */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5); /* Deeper shadow */
+}
+hr {
+  height: 1px;
+  background-color: black;
+  border: none;
+}
+
+.footer {
+  padding: 8px;
+  text-align: center;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 430px) {
+  .header .title {
+    font-size: 32px;
+  }
+  .header img {
+    max-width: 52px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .section .section-container .section-header h1 {
+    font-weight: 900;
+    font-size: 28px;
+  }
+  .section .section-container .section-header p {
+    font-size: 22px;
+  }
+  .section .section-container .making-time div .lable {
+    font-size: 16px;
+  }
+  .section .section-container .making-time div .value {
+    font-size: 16px;
+  }
+  .section .section-container .ingredients,
+  .section .section-container .directions,
+  .section .section-container .nutrition {
+    font-size: 18px;
+  }
+  .section .section-container .nutrition div {
+    padding-right: 32px;
+  }
+  .section .section-container .navigate-home button {
+    width: 160px;
+    height: 40px;
+    font-size: 14px;
+  }
+  .section .section-container .making-time div {
+    padding-bottom: 16px;
+  }
+  .section .section-container .ingredients ul,
+  .section .section-container .directions ol {
+    padding: 12px 8px 12px 24px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .section .section-container .section-header h1 {
+    font-weight: 900;
+    font-size: 24px;
+  }
+  .section .section-container .section-header p {
+    font-size: 18px;
+  }
+  .section .section-container .making-time div {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .section .section-container .making-time div .lable {
+    font-size: 16px;
+  }
+  .section .section-container .making-time div .value {
+    font-size: 16px;
+  }
+  .section .section-container .ingredients,
+  .section .section-container .directions,
+  .section .section-container .nutrition {
+    font-size: 16px;
+  }
+  .section .section-container .navigate-home button {
+    width: 140px;
+    height: 35px;
+    font-size: 12px;
+  }
+  .section .section-container .making-time div {
+    padding-bottom: 16px;
+  }
+  .section .section-container .ingredients ul,
+  .section .section-container .directions ol {
+    padding: 12px 8px 12px 24px;
+  }
+  .section .section-container .nutrition div {
+    padding-right: 18px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .section .section-container .ingredients ul,
+  .section .section-container .directions ol {
+    padding: 12px 0px 12px 24px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .footer {
+    font-size: 16px;
+  }
+}

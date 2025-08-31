@@ -32,6 +32,13 @@ body {
   /* color: white; */
 }
 
+.header-nav {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: flex-end;
+}
+
 .section {
   flex: 1;
   display: flex;
@@ -94,6 +101,10 @@ body {
   align-items: center;
   width: 450px;
 }
+.section .recipes .cards .recipe-card:hover {
+  transform: scale(1.05); /* Slight zoom */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.8); /* Deeper shadow */
+}
 
 .section .recipes .cards .recipe-card img {
   box-sizing: border-box;
@@ -150,6 +161,11 @@ a {
   text-align: center;
   font-weight: bold;
   box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-btn :hover {
+      transform: scale(1.05); /* Slight zoom */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5); /* Deeper shadow */
 }
 
 .footer {
@@ -216,6 +232,7 @@ a {
     width: 100px;
     height: 40px;
   }
+
   .footer {
     font-size: 16px;
   }
