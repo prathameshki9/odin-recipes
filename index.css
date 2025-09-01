@@ -48,7 +48,7 @@ body {
 .section .hero {
   flex: 1;
   margin: 28px;
-  background-image: url("../assets/hero.jpg");
+  background-image: url("./assets/hero.jpg");
   background-position: center;
   /* height: 60vh; */
   background-size: cover;
